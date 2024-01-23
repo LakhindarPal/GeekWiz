@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeekWiz - A programming quiz app</title>
+  <meta name="description" content="GeekWiz - A programming quiz app to test your knowledge in Linux, Bash, Docker, SQL, CMS, Code, and DevOps. Choose your difficulty level (Easy, Medium, Hard) and challenge yourself!">
+  <meta name="author" content="Lakhindar Pal">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://geekwiz.glitch.me">
+  <meta name="twitter:title" content="GeekWiz">
+  <meta name="twitter:description" content="A programming quiz app to test your knowledge in Linux, Bash, Docker, SQL, CMS, Code, and DevOps. Choose your difficulty level (Easy, Medium, Hard) and challenge yourself!">
+  <meta name="twitter:image" content="icons/wide-image-1200x630.webp">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://geekwiz.glitch.me">
+  <meta property="og:title" content="GeekWiz">
+  <meta property="og:description" content="A programming quiz app to test your knowledge in Linux, Bash, Docker, SQL, CMS, Code, and DevOps. Choose your difficulty level (Easy, Medium, Hard) and challenge yourself!">
+  <meta property="og:image" content="icons/wide-image-1200x630.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+
+  <link rel="icon" sizes="512x512" href="icons/android-chrome-icon-512x512.png">
+  <link rel="icon" sizes="192x192" href="icons/android-chrome-192x192.png">
+  <link rel="icon" sizes="144x144" href="icons/android-chrome-144x144.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+
+  <meta name="msapplication-TileImage" content="icons/mstile-144x144.png">
+  <meta name="msapplication-square150x150logo" content="icons/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="icons/mstile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="icons/mstile-310x310.png">
+  <meta name="msapplication-TileColor" content="#007bff">
+
+  <meta name="theme-color" content="#007bff">
+  <link rel="manifest" href="pwa/manifest.json">
+  <meta name="msapplication-config" content="pwa/browserconfig.xml" />
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker
+        .register("pwa/sw.js")
+        .then((reg) => console.log("Service Worker registered", reg))
+        .catch((err) =>
+          console.error("Service Worker **not** registered", err)
+        );
+    } else {
+      console.warn("Service Worker not supported in this browser");
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>GeekWiz</h1>
+  </header>
+
+  <main>
+    <section id="setup">
+      <div>
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="linux">Linux</option>
+          <option value="bash">Bash</option>
+          <option value="docker">Docker</option>
+          <option value="sql">SQL</option>
+          <option value="cms">CMS</option>
+          <option value="code">Code</option>
+          <option value="devops">DevOps</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+
+      <button id="start">Start Quiz</button>
+    </section>
+
+    <section id="question">
+    </section>
+
+    <section id="instructions">
+      <h2>How to play</h2>
+      <p>To play the quiz, follow these steps:</p>
+      <ol>
+        <li><strong>Choose Category:</strong> Select a category from the "Select Category" dropdown. Options include Linux, Bash, Docker, SQL, CMS, Code, or DevOps.</li>
+        <li><strong>Select Difficulty:</strong> Choose Easy, Medium, or Hard from the "Select Difficulty" dropdown.</li>
+        <li><strong>Start Quiz:</strong> Click the "Start Quiz" button to begin.</li>
+        <li><strong>Answer Questions:</strong> For each question, read the prompt and select the correct answer.</li>
+        <li><strong>Next Question:</strong> Click "Next Question" to move to the next one.</li>
+        <li><strong>Complete Quiz:</strong> Continue until the end of the quiz.</li>
+        <li><strong>Finish Before Timeout:</strong> You have a total of 5 minutes to complete the quiz. The timer starts when you click "Start Quiz" and stops when you finish playing or time runs out.</li>
+        <li><strong>View Results:</strong> After all questions, view your final score and completion message.</li>
+        <li><strong>Restart Quiz:</strong> Click "Restart Quiz" to play again.</li>
+      </ol>
+      <p>Enjoy playing the programming quiz!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <span>&copy; 2024 </span>
+      <a href="https://github.com/LakhindarPal" target="_blank" rel="noopener noreferrer">@Lakhindar</a>.
+    </p>
+    <p>All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
