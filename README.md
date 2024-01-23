@@ -7,6 +7,7 @@ GeekWiz is a programming quiz app designed to test your knowledge in Linux, Bash
 - [Introduction](#introduction)
 - [Features](#features)
 - [Live Demo](#live-demo)
+- [Pagespeed Report](#pagespeed-insights-report)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -14,7 +15,6 @@ GeekWiz is a programming quiz app designed to test your knowledge in Linux, Bash
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -32,6 +32,15 @@ GeekWiz is a quiz app aimed at programmers who want to test their skills in vari
 ## Live Demo
 
 Check out the live demo of GeekWiz: [https://geekwiz.glitch.me](https://geekwiz.glitch.me)
+
+## Pagespeed Insights Report
+
+- **Performance:** 99
+- **Accessibility:** 100
+- **Best Practices:** 100
+- **SEO:** 100
+
+Check out the detailed Pagespeed Insights report [here](https://pagespeed.web.dev/analysis/https-geekwiz-glitch-me/tmcj793kox?form_factor=mobile)
 
 ## Technologies
 
