@@ -93,6 +93,9 @@ ul {
 li {
   margin: 1rem;
   text-wrap: pretty;
+  border: 0.5px solid var(--border-color);
+  border-radius: 0.6rem;
+  padding: 0.8rem;
 }
 
 p {
